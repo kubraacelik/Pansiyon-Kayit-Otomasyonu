@@ -29,5 +29,16 @@ namespace Pansiyon_Kayıt_Uygulaması
             FrmYeniMusteri fr = new FrmYeniMusteri();
             fr.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmMusteriler fr = new FrmMusteriler();
+            fr.Show();
+        }
+
+        private void BtnHakkimizda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Lale Pansiyonu Kayıt Uygulaması / 2023 - Muğla");
+        }
     }
 }

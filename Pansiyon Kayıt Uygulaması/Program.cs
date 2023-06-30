@@ -16,7 +16,7 @@ namespace Pansiyon_Kayıt_Uygulaması
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmAdminGiriş());
+            Application.Run(new FrmAnaForm());
         }
     }
 }
