@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
 
 namespace Pansiyon_Kayıt_Uygulaması
 {
@@ -16,6 +18,9 @@ namespace Pansiyon_Kayıt_Uygulaması
         {
             InitializeComponent();
         }
+
+        SqlConnection baglanti = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LalePansiyon;Integrated Security=True");
+
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -34,15 +39,32 @@ namespace Pansiyon_Kayıt_Uygulaması
 
         private void BtnGiris_Click(object sender, EventArgs e)
         {
-            if(TxtKullaniciAdi.Text == "admin" && TxtSifre.Text == "12345")
+            try
             {
-                FrmAnaForm fr = new FrmAnaForm();
-                fr.Show();
-                this.Hide();
+                baglanti.Open();
+                string sql = "select * from AdminGiris where Kullanici = @Kullaniciadi AND Sifre = @Sifresi";
+                SqlParameter pr1 = new SqlParameter("Kullaniciadi", TxtKullaniciAdi.Text.Trim());
+                SqlParameter pr2 = new SqlParameter("Sifresi", TxtSifre.Text.Trim());
+                SqlCommand komut = new SqlCommand(sql, baglanti);
+                komut.Parameters.Add(pr1);
+                komut.Parameters.Add(pr2);
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(komut);
+
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
+                {
+                    FrmAnaForm fr = new FrmAnaForm();
+                    fr.Show();
+                    this.Hide();
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı!");
+                MessageBox.Show("Hatalı Giriş!");
+                throw;
             }
         }
     }

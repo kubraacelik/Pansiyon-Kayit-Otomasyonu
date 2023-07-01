@@ -143,6 +143,7 @@ namespace Pansiyon_Kayıt_Uygulaması
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(908, 528);
             this.Controls.Add(this.BtnOda109);
@@ -154,8 +155,11 @@ namespace Pansiyon_Kayıt_Uygulaması
             this.Controls.Add(this.BtnOda103);
             this.Controls.Add(this.BtnOda102);
             this.Controls.Add(this.BtnOda101);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmOdalar";
             this.Text = "Odalar";
+            this.Load += new System.EventHandler(this.FrmOdalar_Load);
             this.ResumeLayout(false);
 
         }

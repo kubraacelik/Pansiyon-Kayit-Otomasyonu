@@ -40,5 +40,39 @@ namespace Pansiyon_Kayıt_Uygulaması
         {
             MessageBox.Show("Lale Pansiyonu Kayıt Uygulaması / 2023 - Muğla");
         }
+
+        private void BtnOdalar_Click(object sender, EventArgs e)
+        {
+            FrmOdalar fr = new FrmOdalar();
+            fr.Show();
+        }
+
+        private void FrmAnaForm_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToLongDateString();
+            label2.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BtnGelirGider_Click(object sender, EventArgs e)
+        {
+            FrmGelirGider fr = new FrmGelirGider();
+            fr.Show();
+        }
+
+        private void BtnStoklar_Click(object sender, EventArgs e)
+        {
+            FrmStoklar fr = new FrmStoklar();
+            fr.Show();
+        }
     }
 }
