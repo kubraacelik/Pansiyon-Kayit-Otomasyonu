@@ -34,15 +34,19 @@ namespace Pansiyon_Kayıt_Uygulaması
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.LblPersonelMaas = new System.Windows.Forms.Label();
-            this.LblAlinanUrunler = new System.Windows.Forms.Label();
+            this.LblAlinanUrunler1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.LblFaturalar = new System.Windows.Forms.Label();
+            this.LblFaturalar1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.LblSonuc = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.LblAlinanUrunler3 = new System.Windows.Forms.Label();
+            this.LblAlinanUrunler2 = new System.Windows.Forms.Label();
+            this.LblFaturalar2 = new System.Windows.Forms.Label();
+            this.LblFaturalar3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -59,8 +63,9 @@ namespace Pansiyon_Kayıt_Uygulaması
             // LblKasaToplam
             // 
             this.LblKasaToplam.AutoSize = true;
-            this.LblKasaToplam.BackColor = System.Drawing.Color.Gold;
+            this.LblKasaToplam.BackColor = System.Drawing.Color.WhiteSmoke;
             this.LblKasaToplam.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblKasaToplam.ForeColor = System.Drawing.SystemColors.ControlText;
             this.LblKasaToplam.Location = new System.Drawing.Point(230, 43);
             this.LblKasaToplam.Name = "LblKasaToplam";
             this.LblKasaToplam.Size = new System.Drawing.Size(30, 24);
@@ -92,24 +97,26 @@ namespace Pansiyon_Kayıt_Uygulaması
             // LblPersonelMaas
             // 
             this.LblPersonelMaas.AutoSize = true;
-            this.LblPersonelMaas.BackColor = System.Drawing.Color.Gold;
+            this.LblPersonelMaas.BackColor = System.Drawing.Color.WhiteSmoke;
             this.LblPersonelMaas.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblPersonelMaas.ForeColor = System.Drawing.SystemColors.ControlText;
             this.LblPersonelMaas.Location = new System.Drawing.Point(230, 104);
             this.LblPersonelMaas.Name = "LblPersonelMaas";
             this.LblPersonelMaas.Size = new System.Drawing.Size(30, 24);
             this.LblPersonelMaas.TabIndex = 4;
             this.LblPersonelMaas.Text = "00";
             // 
-            // LblAlinanUrunler
+            // LblAlinanUrunler1
             // 
-            this.LblAlinanUrunler.AutoSize = true;
-            this.LblAlinanUrunler.BackColor = System.Drawing.Color.Gold;
-            this.LblAlinanUrunler.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblAlinanUrunler.Location = new System.Drawing.Point(233, 167);
-            this.LblAlinanUrunler.Name = "LblAlinanUrunler";
-            this.LblAlinanUrunler.Size = new System.Drawing.Size(30, 24);
-            this.LblAlinanUrunler.TabIndex = 5;
-            this.LblAlinanUrunler.Text = "00";
+            this.LblAlinanUrunler1.AutoSize = true;
+            this.LblAlinanUrunler1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.LblAlinanUrunler1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblAlinanUrunler1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LblAlinanUrunler1.Location = new System.Drawing.Point(233, 167);
+            this.LblAlinanUrunler1.Name = "LblAlinanUrunler1";
+            this.LblAlinanUrunler1.Size = new System.Drawing.Size(30, 24);
+            this.LblAlinanUrunler1.TabIndex = 5;
+            this.LblAlinanUrunler1.Text = "00";
             // 
             // label7
             // 
@@ -122,22 +129,24 @@ namespace Pansiyon_Kayıt_Uygulaması
             this.label7.TabIndex = 6;
             this.label7.Text = "Faturalar :";
             // 
-            // LblFaturalar
+            // LblFaturalar1
             // 
-            this.LblFaturalar.AutoSize = true;
-            this.LblFaturalar.BackColor = System.Drawing.Color.Gold;
-            this.LblFaturalar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblFaturalar.Location = new System.Drawing.Point(233, 222);
-            this.LblFaturalar.Name = "LblFaturalar";
-            this.LblFaturalar.Size = new System.Drawing.Size(30, 24);
-            this.LblFaturalar.TabIndex = 7;
-            this.LblFaturalar.Text = "00";
+            this.LblFaturalar1.AutoSize = true;
+            this.LblFaturalar1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.LblFaturalar1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblFaturalar1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LblFaturalar1.Location = new System.Drawing.Point(233, 222);
+            this.LblFaturalar1.Name = "LblFaturalar1";
+            this.LblFaturalar1.Size = new System.Drawing.Size(30, 24);
+            this.LblFaturalar1.TabIndex = 7;
+            this.LblFaturalar1.Text = "00";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Gold;
             this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label9.Location = new System.Drawing.Point(381, 43);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(145, 24);
@@ -175,16 +184,17 @@ namespace Pansiyon_Kayıt_Uygulaması
             this.label10.TabIndex = 11;
             this.label10.Text = "Sonuç :";
             // 
-            // label11
+            // LblSonuc
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Gold;
-            this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(233, 397);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(30, 24);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "00";
+            this.LblSonuc.AutoSize = true;
+            this.LblSonuc.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.LblSonuc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblSonuc.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LblSonuc.Location = new System.Drawing.Point(233, 397);
+            this.LblSonuc.Name = "LblSonuc";
+            this.LblSonuc.Size = new System.Drawing.Size(30, 24);
+            this.LblSonuc.TabIndex = 12;
+            this.LblSonuc.Text = "00";
             // 
             // label12
             // 
@@ -198,28 +208,84 @@ namespace Pansiyon_Kayıt_Uygulaması
             this.label12.Text = "---------------------------------------------------------------------------------" +
     "-------------------------------------------------";
             // 
+            // LblAlinanUrunler3
+            // 
+            this.LblAlinanUrunler3.AutoSize = true;
+            this.LblAlinanUrunler3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.LblAlinanUrunler3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblAlinanUrunler3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LblAlinanUrunler3.Location = new System.Drawing.Point(372, 167);
+            this.LblAlinanUrunler3.Name = "LblAlinanUrunler3";
+            this.LblAlinanUrunler3.Size = new System.Drawing.Size(30, 24);
+            this.LblAlinanUrunler3.TabIndex = 14;
+            this.LblAlinanUrunler3.Text = "00";
+            // 
+            // LblAlinanUrunler2
+            // 
+            this.LblAlinanUrunler2.AutoSize = true;
+            this.LblAlinanUrunler2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.LblAlinanUrunler2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblAlinanUrunler2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LblAlinanUrunler2.Location = new System.Drawing.Point(302, 167);
+            this.LblAlinanUrunler2.Name = "LblAlinanUrunler2";
+            this.LblAlinanUrunler2.Size = new System.Drawing.Size(30, 24);
+            this.LblAlinanUrunler2.TabIndex = 15;
+            this.LblAlinanUrunler2.Text = "00";
+            // 
+            // LblFaturalar2
+            // 
+            this.LblFaturalar2.AutoSize = true;
+            this.LblFaturalar2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.LblFaturalar2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblFaturalar2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LblFaturalar2.Location = new System.Drawing.Point(302, 222);
+            this.LblFaturalar2.Name = "LblFaturalar2";
+            this.LblFaturalar2.Size = new System.Drawing.Size(30, 24);
+            this.LblFaturalar2.TabIndex = 16;
+            this.LblFaturalar2.Text = "00";
+            // 
+            // LblFaturalar3
+            // 
+            this.LblFaturalar3.AutoSize = true;
+            this.LblFaturalar3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.LblFaturalar3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblFaturalar3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LblFaturalar3.Location = new System.Drawing.Point(372, 222);
+            this.LblFaturalar3.Name = "LblFaturalar3";
+            this.LblFaturalar3.Size = new System.Drawing.Size(30, 24);
+            this.LblFaturalar3.TabIndex = 17;
+            this.LblFaturalar3.Text = "00";
+            // 
             // FrmGelirGider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(805, 604);
+            this.Controls.Add(this.LblFaturalar3);
+            this.Controls.Add(this.LblFaturalar2);
+            this.Controls.Add(this.LblAlinanUrunler2);
+            this.Controls.Add(this.LblAlinanUrunler3);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.LblSonuc);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.LblFaturalar);
+            this.Controls.Add(this.LblFaturalar1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.LblAlinanUrunler);
+            this.Controls.Add(this.LblAlinanUrunler1);
             this.Controls.Add(this.LblPersonelMaas);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.LblKasaToplam);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmGelirGider";
-            this.Text = "FrmGelirGider";
+            this.Text = "Gelir-Gider";
+            this.Load += new System.EventHandler(this.FrmGelirGider_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,14 +298,18 @@ namespace Pansiyon_Kayıt_Uygulaması
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label LblPersonelMaas;
-        private System.Windows.Forms.Label LblAlinanUrunler;
+        private System.Windows.Forms.Label LblAlinanUrunler1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label LblFaturalar;
+        private System.Windows.Forms.Label LblFaturalar1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label LblSonuc;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label LblAlinanUrunler3;
+        private System.Windows.Forms.Label LblAlinanUrunler2;
+        private System.Windows.Forms.Label LblFaturalar2;
+        private System.Windows.Forms.Label LblFaturalar3;
     }
 }

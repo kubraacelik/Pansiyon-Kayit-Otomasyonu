@@ -74,5 +74,29 @@ namespace Pansiyon_Kayıt_Uygulaması
             FrmStoklar fr = new FrmStoklar();
             fr.Show();
         }
+
+        private void BtnRadyoDinle_Click(object sender, EventArgs e)
+        {
+            FrmRadyoDinle fr = new FrmRadyoDinle();
+            fr.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FrmGazeteler fr = new FrmGazeteler();
+            fr.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmSifreGuncelle fr = new FrmSifreGuncelle();
+            fr.Show();
+        }
+
+        private void BtnMusteriMesajlari_Click(object sender, EventArgs e)
+        {
+            FrmMesajlar fr = new FrmMesajlar();
+            fr.Show();
+        }
     }
 }
